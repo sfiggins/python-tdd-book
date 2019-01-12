@@ -1,7 +1,8 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
 import unittest
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
 
 class NewVisitorTest(unittest.TestCase):
     def setUp(self):
@@ -31,7 +32,6 @@ class NewVisitorTest(unittest.TestCase):
             inputbox.get_attribute('placeholder'),
             'Enter a to-do item'
         )
-
 
         # She types "Buy peackock feathers" into a text box (Edith's hobby
         # is tying fly-fishing lures)
